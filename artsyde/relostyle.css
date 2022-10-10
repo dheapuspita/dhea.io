@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bitter", "Lobster"
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../artsyde/Pictures/bg.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 450px;
+    min-height: 450px;
+    background-color: rgb(94, 71, 25);
+    border-radius: 6px;
+    box-shadow: 1px,1px,5px white;
+    padding: 40px 30px;
+}
+
+.container .login-email{
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display:block;
+    text-transform: capitalize;
+}
+
+.container .login-email .input-group{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .login-email .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background: transparent;
+    padding: 15px 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: 3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid{
+    border: rgb(73, 59, 41);
+}
+
+.container .login-email .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background-color: rgb(83, 62, 35);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1,3rem;
+    color: black;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.container .login-email .input-group .btn:hover{
+    transform: translate(-5px);
+    background:rgb(221, 183, 134);
+}
+
+.login-register{
+    color: black;
+    font-weight: 600;
+}
+
+.login-register a{
+    color: rgb(49, 32, 10);
+}
+
+@media(max-width:430px){
+    .container{
+        width: 330px;
+    }
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    transition: 3s;
+}
+
+.container .login-email .input-group .btn{
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: rgb(175, 129, 69);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn:hover{
+    transform: translate(-5px);
+    background: rgb(112, 85, 50);
+}
+
+.login-register{
+    color:black;
+    font-weight: 600;
+}
